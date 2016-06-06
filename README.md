@@ -4,7 +4,7 @@ A Salesforce package of functional Lightning components styled using the [Salesf
 Refer to the Lightning Design System for additional styles and classes https://www.lightningdesignsystem.com/
 
 ## How To
-After [installing the package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t36000000aSgZ) you will have a set of Lightning components under the `uic:` namespace that can be using within other Lightning components and applications.
+After [installing the package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t36000000aSgZ) you will have a set of Lightning components under the `uic:` namespace that can be used within other Lightning components and applications.
 
 Go to `http://<yourinstance>.lightning.force.com/auradocs/reference.app` then navigate to `Components > uic` for complete documentation.
 
