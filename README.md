@@ -12,3 +12,8 @@ Go to `http://<yourinstance>.lightning.force.com/auradocs/reference.app` then na
 
 ## Examples
 For a thorough example of implementing UIC components, open `http://<yourinstance>.lightning.force.com/uic/uicTesting.app` or view the same app source in your IDE of choice. You can also view examples in this repository [here](https://github.com/benjisnyder/uic/blob/master/src/aura/uicTesting/uicTesting.app).
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=benjisnyder&repo=https://github.com/benjisnyder/uic">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
