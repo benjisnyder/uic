@@ -1,10 +1,10 @@
 # User Interface Components (UIC)
 A Salesforce package of functional Lightning components styled using the [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/).
 
-Refer to the Lightning design system for additional styles and classes https://www.lightningdesignsystem.com/
+Refer to the Lightning Design System for additional styles and classes https://www.lightningdesignsystem.com/
 
 ## How To
-After installing the package (https://help.salesforce.com/apex/HTViewHelpDoc?id=distribution_installing_packages.htm) you will have a set of Lightning components under the `uic:` namespace.
+After [installing the package](https://help.salesforce.com/apex/HTViewHelpDoc?id=distribution_installing_packages.htm) you will have a set of Lightning components under the `uic:` namespace that can be using within other Lightning components and applications.
 
 Go to `http://<yourinstance>.lightning.force.com/auradocs/reference.app` then navigate to `Components > uic` for complete documentation.
 
