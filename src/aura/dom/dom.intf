@@ -1,0 +1,4 @@
+<aura:interface description="Interface template to hold common HTML attributes">
+	<aura:attribute name="class" type="String" default="" description="HTML Class."/>
+    <aura:attribute name="label" type="String" default="" description="A string to use as text content."/>
+</aura:interface>

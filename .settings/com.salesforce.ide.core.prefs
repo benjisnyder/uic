@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+endpointApiVersion=36.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=login.salesforce.com
+httpsProtocol=true
+ideVersion=36.0
+keependpoint=false
+metadataFormatVersion=36.0
+namespacePrefix=uic
+packageName=User Interface Components
+preferToolingDeployment=true
+projectIdentifier=IDE-4612002585291831947
+readTimeout=400
+username=bsnyd@icloud.com

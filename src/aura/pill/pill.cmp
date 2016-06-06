@@ -1,0 +1,14 @@
+<aura:component implements="c:dom" >
+    
+    <aura:attribute name="press" type="Aura.action" default="{!c.onClick}" description="The action that is executed when the user clicks the pill." />
+    <aura:attribute name="onremove" type="Aura.action" default="{!c.onRemove}" description="The action that is executed when the user clicks the remove icon on the pill." />
+    <aura:attribute name="theme" type="String" description="Style of pill. Options: bare, none (default)" default="none" />
+    
+	<a href="javascript:void(0);" onclick="{!v.press}" class="{! 'slds-pill ' + v.class + ' slds-pill--' + v.theme}">
+      <span class="slds-pill__label">{!v.label}</span>
+      <button class="slds-button slds-button--icon-bare slds-pill__remove" onclick="{!v.onremove}">
+        <c:svg class="slds-button__icon" xlinkHref="/resource/SLDS104/assets/icons/utility-sprite/svg/symbols.svg#close" />
+        <span class="slds-assistive-text">Remove</span>
+      </button>
+    </a>
+</aura:component>

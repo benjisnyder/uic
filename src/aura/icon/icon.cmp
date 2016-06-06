@@ -1,0 +1,15 @@
+<aura:component implements="c:env">
+    <aura:attribute name="icon" type="String" />
+    
+    <aura:attribute name="type" type="String" description="What svg sprite to use. Options: utility, action, standard (default)" default="standard" />
+    <aura:attribute name="shape" type="String" description="What shape the icon is. Options: circle, none (default)" default="none" />
+    <aura:attribute name="size" type="String" description="x-small, small, medium (default), or large" default="medium" />
+    <aura:attribute name="theme" type="String" description="warning, error, default, none (default)" default="none" />
+    <aura:attribute name="showBackground" type="Boolean" description="Whether to show the icon's bg color or not" default="true" />
+    <aura:attribute name="assistiveText" type="String" default="Icon" description="The text read by screen readers." />
+    
+	<span class="{! 'slds-icon__container ' + v.class + (v.showBackground ? ' slds-icon-' + v.type + '-' + v.icon : '') + (' slds-icon_container--' + v.shape)}">
+        <c:svg aura:id="svg" class="{! ('slds-icon slds-icon--' + v.size) + ' slds-icon-text-' + v.theme}" xlinkHref="{!'/resource/' + v.sldsVers + '/assets/icons/' + v.type + '-sprite/svg/symbols.svg#' + v.icon}" />
+        <span class="slds-assistive-text">{!v.assistiveText}</span>
+    </span>	
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:component implements="c:env" >
+	<ltng:require styles="{! '/resource/' + v.sldsVers + '/assets/styles/salesforce-lightning-design-system.css' }"/> 
+	<div class="slds">{!v.body}</div>
+</aura:component>

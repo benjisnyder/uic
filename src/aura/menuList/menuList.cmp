@@ -1,0 +1,5 @@
+<aura:component >
+    <ul class="{! 'dropdown__list' + ' ' + v.class}" role="menu">
+        {!v.body}
+    </ul>
+</aura:component>

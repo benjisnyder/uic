@@ -1,0 +1,4 @@
+<aura:component implements="c:dom" >
+    <aura:attribute name="theme" type="String" description="Style of the badge. Options: default, shade, inverse, none (default)" default="none" />
+    <span class="{! 'slds-badge slds-theme--' + v.theme + ' ' + v.class}">{!v.label}</span>
+</aura:component>

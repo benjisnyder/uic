@@ -1,0 +1,7 @@
+<aura:component implements="c:dom" >
+	<nav role="navigation" aria-label="Breadcrumbs">
+      <ol class="{! 'slds-breadcrumb slds-list--horizontal ' + v.class}">
+        {!v.body}
+      </ol>
+    </nav>
+</aura:component>

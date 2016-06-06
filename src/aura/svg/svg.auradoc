@@ -1,0 +1,3 @@
+<aura:documentation>
+	<aura:description><code>uic:svg</code> allows you to display SVG iconography in Lightning.</aura:description>
+</aura:documentation>

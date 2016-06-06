@@ -1,0 +1,30 @@
+.THIS .row {
+	padding: 15px 0;
+}
+
+.THIS .row h2 {
+    margin: 20px 0 15px;
+    font-size: 18px;
+}
+
+.THIS .segment {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+
+.THIS .segment--large {
+    width: 100%;
+    height: 320px;
+}
+
+.THIS .slds-col {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.THIS .slds-modal,
+.THIS .slds-backdrop {
+    position: absolute;
+}

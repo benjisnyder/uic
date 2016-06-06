@@ -1,0 +1,18 @@
+<aura:component implements="c:dom">
+    <aura:attribute name="press" type="Aura.Action" default="{!c.onClick}" description="Action to execute if only passing a string label and no body." />
+    <aura:attribute name="topSpace" type="Boolean" description="Set to true to render list item with border and padding on top." />
+    
+    <!-- TODO: slds-has-divider/dash/dash/top-space -->
+    
+	<li class="{! 'slds-dropdown__item' + ' ' + v.class + ' ' + (v.topSpace ? 'slds-has-divider--top-space' : '')}">
+        <aura:if isTrue="{!v.label != ''}">
+			<a href="javascript:void(0);" role="menuitem" onclick="{!v.press}">
+                <p class="slds-truncate">{!v.label}</p>
+            </a>
+            
+            <aura:set attribute="else">
+            	{!v.body}    
+            </aura:set>
+        </aura:if>
+    </li>
+</aura:component>

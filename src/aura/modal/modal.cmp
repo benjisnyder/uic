@@ -1,0 +1,29 @@
+<aura:component >
+    <aura:attribute name="show" type="Boolean" default="false" description="Toggle this attribute to show and hide the modal." />
+    <aura:attribute name="label" type="String" default="" description="The string that displays in the header of the modal." />
+    <aura:attribute name="buttons" type="Aura.component[]" description="The set of components that show in the footer of the modal." />
+    <aura:attribute name="tagline" type="Aura.component[]" description="A section just under the modal header used to display special messages." />
+    <aura:attribute name="size" type="String" description="Options: large, blank string (default)" />
+    
+    <div class="{! 'slds-modal ' + (v.show ? 'slds-fade-in-open' : '') + ' slds-modal--' + v.size}" aria-hidden="false" role="dialog">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <button class="slds-button slds-button--icon-inverse slds-modal__close" onclick="{!c.close}">
+                    <c:icon icon="close" type="action" size="small" showBackground="false" />
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 class="slds-text-heading--medium" style="">{!v.label}</h2>
+				<aura:if isTrue="{!v.tagline != null}">
+                    <p class="slds-m-top--x-small">{!v.tagline}</p>
+                </aura:if>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium">
+                <div>{!v.body}</div>
+            </div>
+            <div class="slds-modal__footer">
+                {!v.buttons}
+            </div>
+        </div>
+    </div>
+  	<div class="{! 'slds-backdrop ' + (v.show ? 'slds-backdrop--open' : '')}"></div>
+</aura:component>

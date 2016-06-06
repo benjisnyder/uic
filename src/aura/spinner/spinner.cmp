@@ -1,0 +1,11 @@
+<aura:component implements="c:dom" >
+    <aura:attribute name="size" type="String" description="Options: small (default), medium, large" default="small" />
+    <aura:attribute name="theme" type="String" description="Options: brand, inverse, and none (default)" default="none" />
+    
+	<div class="slds-spinner_container">
+      <div class="{! 'slds-spinner slds-spinner--' + v.size + ' slds-spinner--' + v.theme}" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+      </div>
+    </div>
+</aura:component>

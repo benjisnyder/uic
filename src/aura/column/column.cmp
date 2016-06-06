@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:attribute name="padded" type="Boolean" default="true" description="Whether there is internal padding on the column." />
+    <aura:attribute name="paddingSize" type="String" description="Size of padding. Options: medium, large, an empty string (default)" default="" />
+    
+    <aura:attribute name="sizeMin" type="String" default="1" description="The value for X in X-of-Y where Y is the total number of columns." />
+    <aura:attribute name="sizeMax" type="String" default="2" description="The value for Y in X-of-Y where Y is the total number of columns." />
+    
+    <!-- TODO: maybe allow these to be provided, otherwise, dev can just update sizes manually -->
+    <!--aura:attribute name="sizeMinMedium" type="String" />
+    <aura:attribute name="sizeMaxMedium" type="String" />
+    <aura:attribute name="sizeMinLarge" type="String" />
+    <aura:attribute name="sizeMaxLarge" type="String" /-->
+    
+	<div class="{! 'slds-col ' + (v.padded ? ('slds-col--padded' + (v.paddingSize != '' ? '-' + v.paddingSize : '')) : '') + ' slds-size--' + v.sizeMin + '-of-' + v.sizeMax + ' ' + v.class}">{!v.body}</div>	
+</aura:component>

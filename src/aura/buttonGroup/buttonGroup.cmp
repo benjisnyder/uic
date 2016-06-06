@@ -1,0 +1,7 @@
+<aura:component implements="c:dom">
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>    
+    
+    <div class="{!'slds-button-group' + v.class}" role="group">
+        {!v.body}
+    </div>
+</aura:component>

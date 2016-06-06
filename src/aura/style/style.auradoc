@@ -1,0 +1,3 @@
+<aura:documentation>
+	<aura:description>Use this as the parent component to all other UIC components. Anything outside of this component will not receive SLDS styles.</aura:description>
+</aura:documentation>

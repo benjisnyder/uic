@@ -1,0 +1,25 @@
+<aura:component >
+	<aura:handler name="init" value="{!this}" action="{!c.onInit}"/>    
+
+    <aura:attribute name="label" type="String" description="String used for button label." />
+    <aura:attribute name="disabled" type="Boolean" default="false" description="HTML attribute." />
+    <aura:attribute name="name" type="String" description="HTML attribute." />
+    <aura:attribute name="type" type="String" description="HTML attribute." />
+    <aura:attribute name="theme" type="String" description="Defines the style type of the button. Options: neutral (default), destructive, inverse, brand, none." default="neutral" />
+    <aura:attribute name="value" type="String" description="HTML attribute." />
+    <aura:attribute name="class" type="String" description="CSS class to append to the HTML class attribute." />
+    <aura:attribute name="title" type="String" description="HTML attribute." />
+    <aura:attribute name="press" type="Aura.Action" description="Action executed on click of button." />
+    <aura:attribute name="icon" type="Boolean" description="Flag to indicate whether this is a button with an icon." />
+    
+    <aura:attribute name="grouped" type="Boolean" access="private" description="Private, indicates button is in a group." />
+    
+	<button aura:id="button"
+            class="{!'slds-button ' + (v.grouped ? ' slds-button--neutral ' : '') + v.class + (v.icon ? ' slds-button--icon-border' : '') + ' slds-button--' + v.theme}" 
+            title="{!v.title}"
+            name="{!v.name}" 
+            disabled="{!v.disabled}" 
+            type="{!v.type}" 
+            value="{!v.value}"
+            onclick="{!v.press}">{!v.label ? v.label : v.body}</button>
+</aura:component>

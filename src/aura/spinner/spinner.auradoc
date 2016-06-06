@@ -1,0 +1,3 @@
+<aura:documentation>
+	<aura:description><code>uic:spinner</code> replicates <a href="https://www.lightningdesignsystem.com/components/spinners/">SLDS Spinner</a></aura:description>
+</aura:documentation>

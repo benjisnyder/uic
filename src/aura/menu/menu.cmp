@@ -1,0 +1,18 @@
+<aura:component implements="c:dom">
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>    
+    
+    <aura:attribute name="visible" type="Boolean" description="Toggle this attribute to show and hide the menu." />
+    <aura:attribute name="button" type="Aura.Component[]" description="The button that triggers the drop down when clicked. Leave the button's press attribute blank for default menu toggle behavior. If you override the press action, you have to manually toggle the menu's visible attribute." required="true" />
+    <aura:attribute name="toggleAction" type="Aura.Action" default="{!c.doToggle}" access="private" description="Used to pass toggle action around." />
+    <aura:attribute name="positionX" type="String" default="left" description="The position of the dropdown menu on the X-axis. Options: right, left (default)" />
+    <aura:attribute name="positionY" type="String" default="top" description="The position of the dropdown menu on the Y-axis. Options: bottom, top (default)" />
+    
+    <!-- TODO: selected states, positioning, menu item styles with borders on top etc -->
+    
+    <div class="{! 'slds-dropdown-trigger slds-dropdown-trigger--click' + ' ' + v.class + ' ' + (v.visible ? 'slds-is-open' : '')}" aria-expanded="true">
+      {!v.button}
+      <div class="{! 'slds-dropdown'  + ' slds-dropdown--' + v.positionX + ' slds-dropdown--' + v.positionY}">
+        {!v.body}
+      </div>
+    </div>
+</aura:component>

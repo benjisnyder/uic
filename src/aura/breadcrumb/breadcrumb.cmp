@@ -1,0 +1,4 @@
+<aura:component implements="c:dom" >
+    <aura:attribute name="press" type="Aura.Action" default="{!c.onclick}" description="The action to execute when breadcrumb is clicked." />
+    <li class="{! 'slds-list__item slds-text-heading--label ' + v.class}"><a href="javascript:void(0);" onclick="{!v.press}">{!v.label}</a></li>	
+</aura:component>

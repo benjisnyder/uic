@@ -1,0 +1,6 @@
+<aura:component implements="c:dom" >
+    <aura:attribute name="padded" type="Boolean" default="true" description="Whether the grid has internal padding." />
+    <aura:attribute name="wrap" type="Boolean" default="true" description="Whether the grid elements wrap to new lines." />
+    
+	<div class="{! 'slds-grid ' + (v.wrap ? ' slds-wrap' : '')  + (v.padded ? ' slds-grid--pull-padded' : '') + ' ' + v.class}">{!v.body}</div>
+</aura:component>

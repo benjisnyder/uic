@@ -1,0 +1,3 @@
+<aura:documentation>
+	<aura:description><code>uic:column</code> replicates <a href="https://www.lightningdesignsystem.com/components/grids/">SLDS Grids</a></aura:description>
+</aura:documentation>

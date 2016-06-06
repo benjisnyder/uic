@@ -1,0 +1,5 @@
+<aura:component implements="c:dom" >
+	<div class="{! 'slds-dropdown__header ' + v.class}">
+      <span class="slds-text-title--caps">{!v.label}</span>
+    </div>
+</aura:component>
